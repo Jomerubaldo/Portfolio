@@ -1,0 +1,87 @@
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #010409;
+  font-family: apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+}
+
+#container {
+  display: flex;
+  gap: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+aside {
+  width: 20%;
+  height: 685px;
+  border-radius: 8px;
+  border-width: thin;
+  border-style: solid;
+  border-color: #2F353D;
+  background-color: #0D1117;
+  padding-top: 20px;
+
+}
+
+#profile_picture {
+  border-radius: 100%;
+  width: 230px;
+  height: 230px;
+}
+
+#profile_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+main {
+  width: 80%;
+  height: 685 px;
+  padding: 5px;
+  border-radius: 8px;
+  border-width: thin;
+  border-style: solid;
+  border-color: #2F353D;
+  background-color: #0D1117;
+}
