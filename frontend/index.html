@@ -10,7 +10,29 @@
 
 <body class="font-mono scroll-smooth bg-[#010409]">
 
-  <main class="min-h-screen flex flex-col items-center px-6 py-10 gap-10 max-w-md mx-auto md:max-w-2xl">
+  <nav class="flex justify-between items-center px-6 py-6 w-full fixed z-50 bg-[#010409]">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+      <path d="M4 5h16" />
+      <path d="M4 12h16" />
+      <path d="M4 19h16" />
+    </svg>
+    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+      stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="lucide lucide-sun-icon lucide-sun">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2" />
+      <path d="M12 20v2" />
+      <path d="m4.93 4.93 1.41 1.41" />
+      <path d="m17.66 17.66 1.41 1.41" />
+      <path d="M2 12h2" />
+      <path d="M20 12h2" />
+      <path d="m6.34 17.66-1.41 1.41" />
+      <path d="m19.07 4.93-1.41 1.41" />
+    </svg>
+  </nav>
+
+  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 max-w-md mx-auto md:max-w-2xl">
 
     <section class="flex flex-col items-center gap-3">
       <img class="rounded-full md:rounded-lg w-40 h-40 object-cover" src="/frontend/images/professional-profile.png"
@@ -18,8 +40,9 @@
       <h1 class="text-[#FFF] text-xl text-center">Jomer Ubaldo</h1>
     </section>
 
+    <h2 class="text-[#FFF] text-lg text-center font-semibold">About Me</h2>
+
     <section class="flex flex-col gap-3 w-full">
-      <h2 class="text-[#FFF] text-lg text-center">About Me</h2>
       <p class="text-[#FFF] text-sm leading-relaxed text-center">
         Hi! I'm Jomer Ubaldo, Aspiring Software Engineer and undergraduate
         student passionate about building real-world application. Creating hands-on projects using
@@ -27,14 +50,279 @@
       </p>
     </section>
 
+    <h2 class="text-[#FFF] text-lg font-semibold text-center">Projects</h2>
+
+    <!-- Boarding House Management System -->
     <section class="flex flex-col gap-3 items-center">
-      <h2 class="text-[#FFF] text-lg text-center">Projects</h2>
-      <div class="border-2 border-[#2F353D] bg-[#0D1117] py-1 px-1">
-        <img class="rounded-md w-60 h-60 object-cover" src="/frontend/images/professional-profile.png"
-          alt="Project 1" />
+      <div onclick="bhmsOpenPhoto()" class="w-full max-w-[350px] cursor-pointer space-y-2">
+        <p class="text-white text-center">Boarding House Management System</p>
+        <img src="/frontend//images/BHMS/Screenshot 2026-08-20 024143.png"
+          class="w-full rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-transform duration-200 hover:scale-[1.02]" />
+      </div>
+
+      <!-- BHMS photo modal -->
+      <div id="bhmsPhotoModal"
+        class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
+
+        <span onclick="bhmsClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </span>
+
+        <div class="w-[90%] max-w-[500px]">
+          <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
+      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+            <!-- photo 1 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/BHMS/Screenshot 2026-08-20 024143.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+            <!-- photo 2 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/BHMS/Screenshot 2026-08-20 023946.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+            <!-- photo 3 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/BHMS/Screenshot 2026-08-20 023958.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+            <!-- photo 4 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/BHMS/Screenshot 2026-08-20 024012.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+            <!-- photo 5 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/BHMS/Screenshot 2026-08-20 024035.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+          </div>
+          <span class="text-white text-sm mt-2 block text-center">Swipe left or right</span>
+        </div>
       </div>
     </section>
 
+    <!-- Aluminum and Glass Supply Sales and Order Management System -->
+    <section class="flex flex-col gap-3 items-center">
+      <div onclick="agssomsOpenPhoto()" class="w-full max-w-[350px] cursor-pointer space-y-2">
+        <p class="text-white text-center">Aluminum and Glass Supply</p>
+        <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151608.png "
+          class="w-full rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-transform duration-200 hover:scale-[1.02]" />
+      </div>
+
+      <!-- AGSSOMS photo modal -->
+      <div id="agssomsPhotoModal"
+        class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
+
+        <span onclick="agssomsClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </span>
+
+        <div class="w-[90%] max-w-[500px]">
+          <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
+              [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+            <!-- photo 1 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151608.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 2 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151620.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 3 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151630.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 4 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151641.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 5 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151654.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 6 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151708.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 7 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151716.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 8 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151726.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 9 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/AGSSOMS/Screenshot 2026-08-20 151734.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+          </div>
+          <span class="text-white text-sm mt-2 block text-center">Swipe left or right</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- React Web Studio -->
+    <section class="flex flex-col gap-3 items-center">
+      <div onclick="rwsOpenPhoto()" class="w-full max-w-[350px] cursor-pointer space-y-2">
+        <p class="text-white text-center">React Web Studio</p>
+        <img src="/frontend/images/RWS/Screenshot 2026-08-20 232500.png"
+          class="w-full rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-transform duration-200 hover:scale-[1.02]" />
+      </div>
+
+      <!-- RWS photo modal -->
+      <div id="rwsPhotoModal"
+        class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
+
+        <span onclick="rwsClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </span>
+
+        <div class="w-[90%] max-w-[500px]">
+          <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
+                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+            <!-- photo 1 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/RWS/Screenshot 2026-08-20 232500.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 2 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/RWS/Screenshot 2026-08-20 232529.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+          </div>
+          <span class="text-white text-sm mt-2 block text-center">Swipe left or right</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tourist Destinations Website -->
+    <section class="flex flex-col gap-3 items-center">
+      <div onclick="tdwOpenPhoto()" class="w-full max-w-[350px] cursor-pointer space-y-2">
+        <p class="text-white text-center">Tourist Destinations Website</p>
+        <img src="/frontend/images/TDW/Screenshot 2026-08-21 001335.png"
+          class="w-full rounded-sm shadow-[0_4px_10px_rgba(0,0,0,0.15)] transition-transform duration-200 hover:scale-[1.02]" />
+      </div>
+
+      <!-- TDW photo modal -->
+      <div id="tdwPhotoModal"
+        class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
+
+        <span onclick="tdwClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg>
+        </span>
+
+        <div class="w-[90%] max-w-[500px]">
+          <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
+                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+
+            <!-- photo 1 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-21 001335.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 2 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234727.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 3 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234741.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 4 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234751.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 5 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234802.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 6 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234810.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 7 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234818.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 8 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234829.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 9 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234840.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+            <!-- photo 10 -->
+            <div class="w-full snap-start flex-none">
+              <img src="/frontend/images/TDW/Screenshot 2026-08-20 234912.png"
+                class="w-full h-auto max-h-[70vh] object-contain select-none [user-drag:none] [-webkit-user-drag:none]" />
+            </div>
+
+          </div>
+          <span class="text-white text-sm mt-2 block text-center">Swipe left or right</span>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="function.js"></script>
