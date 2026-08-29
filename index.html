@@ -455,6 +455,51 @@
       </div>
     </section>
 
+    <h2 class="text-[#FFF] text-xl font-semibold text-center">Certifications</h2>
+
+    <section class="px-4 py-8 max-w-md mx-auto">
+
+      <div class="flex">
+        <!-- LEFT — isang malaking image -->
+        <div class="flex-1">
+          <img onclick="openCert1()" src="/images/Certifications/Ubaldo_[E-Certificate]_BeyondTheTerminal_page-0001.jpg"
+            class="w-full h-full object-cover rounded-tl-lg rounded-bl-lg cursor-pointer hover:opacity-90 transition-opacity" />
+        </div>
+        <!-- RIGHT — dalawang image na naka-stack -->
+        <div class="flex-1 flex flex-col">
+          <img onclick="openCert2()" src="/images/Certifications/Of participation - 2025-12-04T210638.568_page-0001.jpg"
+            class="w-full flex-1 object-cover rounded-tr-lg cursor-pointer hover:opacity-90 transition-opacity" />
+          <img onclick="openCert3()" src="/images/Certifications/Of participation (35)_page-0001.jpg"
+            class="w-full flex-1 object-cover rounded-br-lg cursor-pointer hover:opacity-90 transition-opacity" />
+        </div>
+
+        <!-- Cert Modal 1 -->
+        <div id="certModal1"
+          class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
+          onclick="closeCert1()">
+          <img src="/images/Certifications/Ubaldo_[E-Certificate]_BeyondTheTerminal_page-0001.jpg"
+            class="max-w-full max-h-[90vh] object-contain rounded-md" />
+        </div>
+
+        <!-- Cert Modal 2 -->
+        <div id="certModal2"
+          class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
+          onclick="closeCert2()">
+          <img src="/images/Certifications/Of participation - 2025-12-04T210638.568_page-0001.jpg"
+            class="max-w-full max-h-[90vh] object-contain rounded-md" />
+        </div>
+
+        <!-- Cert Modal 3 -->
+        <div id="certModal3"
+          class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
+          onclick="closeCert3()">
+          <img src="/images/Certifications/Of participation (35)_page-0001.jpg"
+            class="max-w-full max-h-[90vh] object-contain rounded-md" />
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <script src="function.js"></script>

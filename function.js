@@ -46,6 +46,43 @@ function tdwClosePhoto() {
   agssomsModal.classList.remove('flex');
 }
 
+// cetification part
+function openCert1() {
+  const modal1 = document.getElementById('certModal1');
+  modal1.classList.remove('hidden');
+  modal1.classList.add('flex');
+}
+
+function closeCert1() {
+  const modal1 = document.getElementById('certModal1');
+  modal1.classList.add('hidden');
+  modal1.classList.remove('flex');
+}
+
+function openCert2() {
+  const modal2 = document.getElementById('certModal2');
+  modal2.classList.remove('hidden');
+  modal2.classList.add('flex');
+}
+
+function closeCert2() {
+  const modal2 = document.getElementById('certModal2');
+  modal2.classList.add('hidden');
+  modal2.classList.remove('flex');
+}
+
+function openCert3() {
+  const modal3 = document.getElementById('certModal3');
+  modal3.classList.remove('hidden');
+  modal3.classList.add('flex');
+}
+
+function closeCert3() {
+  const modal3 = document.getElementById('certModal3');
+  modal3.classList.add('hidden');
+  modal3.classList.remove('flex');
+}
+
 const slider = document.querySelector('#scroll-container');
 
 let isDown = false;
