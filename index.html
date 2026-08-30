@@ -33,12 +33,13 @@
     </svg>
   </nav>
 
-  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 max-w-md mx-auto md:max-w-2xl">
+  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 max-w-md mx-auto md:max-w-3xl">
 
     <section class="flex flex-col items-center gap-3">
-      <img class="rounded-full w-44 h-44 object-cover" src="images/professional-profile.png" alt="Profile" />
-      <h1 class="text-[#FFF] text-2xl text-center">Jomer Ubaldo</h1>
-      <ul class="flex gap-5 text-[#FFF] text-xl">
+      <img class="rounded-full w-44 h-44 object-cover md:w-64 md:h-64" src="images/professional-profile.png"
+        alt="Profile" />
+      <h1 class="text-[#FFF] text-2xl md:text-3xl text-center">Jomer Ubaldo</h1>
+      <ul class="flex gap-5 text-[#FFF] text-xl md:text-2xl">
         <li><a href="mailto:jomerubaldo@gmail.com"><i class="ri-mail-line"></i></a></li>
         <li><a href="https://github.com/Jomerubaldo" target="_blank"><i class="ri-github-fill"></i></a></li>
         <li><a href="https://www.linkedin.com/in/jomer-ubaldo-746626340/" target="_blank"><i
@@ -46,44 +47,217 @@
       </ul>
     </section>
 
-    <h2 class="text-[#FFF] text-xl text-center font-semibold">About Me</h2>
+    <h2 class="text-[#FFF] text-xl text-center font-semibold md:text-2xl">About Me</h2>
 
     <section class="flex flex-col gap-3 w-full">
-      <p class="text-gray-400/100 tracking-wide text-sm leading-relaxed text-center">
+      <p class="text-gray-400/100 tracking-wide md:text-base text-sm leading-relaxed text-center">
         Hi! I'm Jomer Ubaldo, Aspiring Software Engineer and undergraduate
         student passionate about building real-world application. Creating hands-on projects using
         modern technologies with MySQL, ExpressJS, ReactJS and NodeJS.
       </p>
     </section>
 
-    <h2 class="text-[#FFF] text-xl font-semibold text-center">Projects</h2>
+    <h2 class="text-[#FFF] text-xl font-semibold text-center md:text-2xl">Projects</h2>
 
-    <!-- Boarding House Management System -->
-    <section class="w-full max-w-[350px] space-y-2">
-      <div class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
-        <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line"></i></span>
-        <img onclick="bhmsOpenPhoto()" src="images/BHMS/Screenshot 2026-08-20 024143.png"
-          class="w-full rounded-b-none rounded-lg cursor-pointer" />
-        <div class="p-3 flex flex-col gap-3">
-          <h2 class="text-white font-bold text-sm select-none text-left">Boarding House Management System</h2>
-          <p class="text-gray-400/100 tracking-wide select-none text-xs text-left">Developed an admin-only with manual
-            data
-            input for
-            business
-            owners. Integrated an analytics dashboard
-            to track real-time boarder numbers, room availability, room status, and revenue, secured by robust user
-            authentication</p>
-          <div class="flex flex-wrap justify-start gap-2 text-xs pb-3 select-none">
-            <span class="bg-slate-500 rounded-md p-1 whitespace-nowrap">CRUD</span>
-            <span class="bg-blue-500 rounded-md p-1 whitespace-nowrap">Personal Project</span>
-            <span class="bg-emerald-500 rounded-md p-1 whitespace-nowrap">Full Stack</span>
-            <span class="bg-amber-500 rounded-md p-1 whitespace-nowrap">Authentication</span>
-            <span class="bg-red-500 rounded-md p-1 whitespace-nowrap">MERN Stack</span>
-            <span class="bg-yellow-500 p-1 rounded-md whitespace-nowrap">DaisyUI</span>
+    <div class="space-y-5 md:grid md:grid-cols-2 auto-rows-fr md:gap-5">
+      <!-- Boarding House Management System -->
+      <section class="w-full max-w-[350px] space-y-2">
+        <div
+          class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
+          <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
+          <img onclick="bhmsOpenPhoto()" src="images/BHMS/Screenshot 2026-08-20 024143.png"
+            class="w-full rounded-b-none rounded-lg cursor-pointer" />
+          <div class="p-3 flex flex-col gap-3">
+            <h2 class="text-white font-bold text-sm md:text-base select-none text-left">Boarding House Management System
+            </h2>
+            <p class="text-gray-400/100 tracking-wide select-none text-xs md:text-sm text-left">Developed an admin-only
+              with manual
+              data
+              input for
+              business
+              owners. Integrated an analytics dashboard
+              to track real-time boarder numbers, room availability, room status, and revenue, secured by robust user
+              authentication</p>
+            <div class="flex flex-wrap justify-start gap-2 md:text-sm text-xs pb-3 select-none">
+              <span class="bg-slate-500 rounded-md p-1 whitespace-nowrap">CRUD</span>
+              <span class="bg-blue-500 rounded-md p-1 whitespace-nowrap">Personal Project</span>
+              <span class="bg-emerald-500 rounded-md p-1 whitespace-nowrap">Full Stack</span>
+              <span class="bg-amber-500 rounded-md p-1 whitespace-nowrap">Authentication</span>
+              <span class="bg-red-500 rounded-md p-1 whitespace-nowrap">MERN Stack</span>
+              <span class="bg-yellow-500 p-1 rounded-md whitespace-nowrap">DaisyUI</span>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- Aluminum and Glass Supply Sales and Order Management System -->
+      <section class="w-full max-w-[350px] space-y-2">
+        <div
+          class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
+          <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
+          <img onclick="agssomsOpenPhoto()" src="images/AGSSOMS/Screenshot 2026-08-20 151608.png "
+            class="w-full cursor-pointer rounded-lg rounded-b-none shadow-[0_4px_10px_rgba(0,0,0,0.15)]" />
+          <div class="p-3 flex flex-col gap-3">
+            <h2 class="text-white font-bold text-sm md:text-base select-none text-left">Aluminum and Glass Supply</h2>
+            <p class="text-gray-400/100 select-none tracking-wide md:text-sm text-xs text-left">This project focuses on
+              developing
+              a
+              Sales
+              and Order
+              Management
+              System for manages customer orders, customized requests such as
+              specific measurements, material purchases from
+              hardware suppliers,
+              and the delivery and installation of finished products, including aluminum frames, glass panels, and
+              related
+              accessories.
+            </p>
+            <div class="flex justify-start gap-2 flex-wrap md:text-sm text-xs select-none pb-3">
+              <span class="bg-slate-500 p-1 rounded-md whitespace-nowrap">CRUD</span>
+              <span class="bg-emerald-500 p-1 rounded-md whitespace-nowrap">Full Stack</span>
+              <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">Final Exam</span>
+              <span class="bg-red-500 p-1 rounded-md whitespace-nowrap">MERN Stack</span>
+              <span class="bg-white p-1 rounded-md whitespace-nowrap">ShadCN</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- React Web Studio -->
+      <section class="w-full max-w-[350px] space-y-2">
+        <div
+          class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
+          <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
+          <img onclick="rwsOpenPhoto()" src="images/RWS/Screenshot 2026-08-20 232500.png"
+            class="w-full cursor-pointer rounded-lg rounded-b-none shadow-[0_4px_10px_rgba(0,0,0,0.15)]" />
+          <div class="p-3 flex flex-col gap-3">
+            <h2 class="text-white font-bold text-sm md:text-base select-none text-left">React Web Studio</h2>
+            <p class="text-left tracking-wide select-none md:text-sm text-xs text-gray-400/100">React from Scratch is a
+              hands-on,
+              beginner-friendly
+              video series
+              that takes you from an empty folder to a fully
+              interactive React app — no prior React knowledge required. You'll learn about JSX, components, state
+              management,
+              controlled inputs, data fetching, and even TypeScript!</p>
+            <div class="flex justify-start gap-2 flex-wrap text-xs md:text-sm pb-3 select-none">
+              <span class="bg-slate-500 p-1 rounded-md whitespace-nowrap">Course</span>
+              <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">Personal Project</span>
+              <span class="bg-emerald-500 p-1 rounded-md whitespace-nowrap">Frontend</span>
+              <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">TypeScript</span>
+              <span class="bg-sky-500 p-1 rounded-md whitespace-nowrap">Tailwindcss</span>
+              <span class="bg-sky-400 p-1 rounded-md whitespace-nowrap">ReactJS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tourist Destinations Website -->
+      <section class="w-full max-w-[350px] space-y-2">
+        <div
+          class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
+          <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line"></i></span>
+          <img onclick="tdwOpenPhoto()" src="images/TDW/Screenshot 2026-08-27 193143.png"
+            class="w-full cursor-pointer rounded-lg rounded-b-none shadow-[0_4px_10px_rgba(0,0,0,0.15)]" />
+          <div class="flex flex-col gap-3 p-3">
+            <h2 class="text-white font-bold text-sm md:text-base select-none text-left">Tourist Destinations Website
+            </h2>
+            <p class="text-left tracking-wide text-xs md:text-sm select-none text-gray-400/100">A simple Tourist Website
+              created as
+              part of
+              our
+              Midterm
+              Examination as BSIT 2nd year students. It showcases popular
+              tourist destinations across Asia, Europe, and America, featuring brief descriptions and images. Built
+              with HTML
+              and CSS, the website uses structured sections, navigation links, and smooth scrolling to provide an
+              organized,
+              visually engaging, and user-friendly experience while demonstrating basic web development concepts.
+            </p>
+            <div class="flex justify-start gap-2 text-xs md:text-sm flex-wrap pb-3 select-none">
+              <span class="bg-orange-500 p-1 rounded-md whitespace-nowrap">HTML</span>
+              <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">CSS</span>
+              <span class="bg-sky-500 p-1 rounded-md whitespace-nowrap">Final Project</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Tools</h2>
+
+    <section>
+      <div class="flex flex-col gap-2 md:gap-4">
+        <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,js" class="w-64 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,vite" class="w-64 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=ts,mysql,github,git,npm" class="w-64 md:w-94" />
       </div>
     </section>
+
+    <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Experience</h2>
+
+    <section class="px-4 py-8 max-w-md md:max-w-lg mx-auto">
+      <div class="flex">
+        <div class="flex-1 text-right pr-4 pb-10">
+          <p class="text-white font-semibold text-md md:text-xl">Started Learning</p>
+          <p class="text-gray-400 text-sm md:text-md">Student</p>
+          <p class="text-gray-500 text-sm md:text-md">2024 – 2025</p>
+        </div>
+        <div class="w-0.5 md:w-1 bg-gray-600 mx-4 flex justify-center items-center">
+          <span class="w-1 md:w-2 bg-emerald-500 h-5 rounded-full"></span>
+        </div>
+        <div class="flex-1 pb-10"></div>
+      </div>
+
+      <div class="flex">
+        <div class="flex-1 pb-10"></div>
+        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
+          <span class="w-1 bg-amber-500 h-5 rounded-full"></span>
+        </div>
+        <div class="flex-1 text-left pl-4 pb-10">
+          <p class="text-white font-medium text-md">Fronted Developer</p>
+          <p class="text-gray-400 text-sm">Student</p>
+          <p class="text-gray-500 text-sm">2025 – 2026</p>
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="flex-1 text-right pr-4 pb-10">
+          <p class="text-white font-medium text-md">Full Stack Developer</p>
+          <p class="text-gray-400 text-sm">Student</p>
+          <p class="text-gray-500 text-sm">2026 – 2027</p>
+        </div>
+        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
+          <span class="w-1 bg-sky-500 h-5 rounded-full"></span>
+        </div>
+
+        <div class="flex-1 pb-10"></div>
+
+      </div>
+    </section>
+
+    <h2 class="text-[#FFF] text-xl font-semibold text-center">Certifications</h2>
+
+    <section class="px-4 py-8 max-w-md mx-auto">
+
+      <div class="flex">
+        <!-- LEFT — isang malaking image -->
+        <div class="flex-1">
+          <img onclick="openCert1()" src="images/Certifications/Ubaldo_[E-Certificate]_BeyondTheTerminal_page-0001.jpg"
+            class="w-full h-full object-cover rounded-tl-lg rounded-bl-lg cursor-pointer hover:opacity-90 transition-opacity" />
+        </div>
+        <!-- RIGHT — dalawang image na naka-stack -->
+        <div class="flex-1 flex flex-col">
+          <img onclick="openCert2()" src="images/Certifications/Of participation - 2025-12-04T210638.568_page-0001.jpg"
+            class="w-full flex-1 object-cover rounded-tr-lg cursor-pointer hover:opacity-90 transition-opacity" />
+          <img onclick="openCert3()" src="images/Certifications/Of participation (35)_page-0001.jpg"
+            class="w-full flex-1 object-cover rounded-br-lg cursor-pointer hover:opacity-90 transition-opacity" />
+        </div>
+      </div>
+
+    </section>
+
+    <!------------------------------------ all modal  -------------------------------------------------->
 
     <!-- BHMS photo modal -->
     <div id="bhmsPhotoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
@@ -98,7 +272,7 @@
 
       <div class="w-[90%] max-w-[500px]">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+              [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -131,36 +305,6 @@
       </div>
     </div>
 
-    <!-- Aluminum and Glass Supply Sales and Order Management System -->
-    <section class="w-full max-w-[350px] space-y-2">
-      <div class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
-        <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line"></i></span>
-        <img onclick="agssomsOpenPhoto()" src="images/AGSSOMS/Screenshot 2026-08-20 151608.png "
-          class="w-full cursor-pointer rounded-lg rounded-b-none shadow-[0_4px_10px_rgba(0,0,0,0.15)]" />
-        <div class="p-3 flex flex-col gap-3">
-          <h2 class="text-white font-bold text-sm select-none text-left">Aluminum and Glass Supply</h2>
-          <p class="text-gray-400/100 select-none tracking-wide text-xs text-left">This project focuses on developing a
-            Sales
-            and Order
-            Management
-            System for manages customer orders, customized requests such as
-            specific measurements, material purchases from
-            hardware suppliers,
-            and the delivery and installation of finished products, including aluminum frames, glass panels, and
-            related
-            accessories.
-          </p>
-          <div class="flex justify-start gap-2 flex-wrap text-xs select-none pb-3">
-            <span class="bg-slate-500 p-1 rounded-md whitespace-nowrap">CRUD</span>
-            <span class="bg-emerald-500 p-1 rounded-md whitespace-nowrap">Full Stack</span>
-            <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">Final Exam</span>
-            <span class="bg-red-500 p-1 rounded-md whitespace-nowrap">MERN Stack</span>
-            <span class="bg-white p-1 rounded-md whitespace-nowrap">ShadCN</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- AGSSOMS photo modal -->
     <div id="agssomsPhotoModal"
       class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
@@ -175,7 +319,7 @@
 
       <div class="w-[90%] max-w-[500px]">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-              [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -236,33 +380,6 @@
       </div>
     </div>
 
-    <!-- React Web Studio -->
-    <section class="w-full max-w-[350px] space-y-2">
-      <div class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
-        <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line"></i></span>
-        <img onclick="rwsOpenPhoto()" src="images/RWS/Screenshot 2026-08-20 232500.png"
-          class="w-full cursor-pointer rounded-lg rounded-b-none shadow-[0_4px_10px_rgba(0,0,0,0.15)]" />
-        <div class="p-3 flex flex-col gap-3">
-          <h2 class="text-white font-bold text-sm select-none text-left">React Web Studio</h2>
-          <p class="text-left tracking-wide select-none text-xs text-gray-400/100">React from Scratch is a hands-on,
-            beginner-friendly
-            video series
-            that takes you from an empty folder to a fully
-            interactive React app — no prior React knowledge required. You'll learn about JSX, components, state
-            management,
-            controlled inputs, data fetching, and even TypeScript!</p>
-          <div class="flex justify-start gap-2 flex-wrap text-xs pb-3 select-none">
-            <span class="bg-slate-500 p-1 rounded-md whitespace-nowrap">Course</span>
-            <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">Personal Project</span>
-            <span class="bg-emerald-500 p-1 rounded-md whitespace-nowrap">Frontend</span>
-            <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">TypeScript</span>
-            <span class="bg-sky-500 p-1 rounded-md whitespace-nowrap">Tailwindcss</span>
-            <span class="bg-sky-400 p-1 rounded-md whitespace-nowrap">ReactJS</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- RWS photo modal -->
     <div id="rwsPhotoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
 
@@ -276,7 +393,7 @@
 
       <div class="w-[90%] max-w-[500px]">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                            [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -295,34 +412,6 @@
       </div>
     </div>
 
-    <!-- Tourist Destinations Website -->
-    <section class="w-full max-w-[350px] space-y-2">
-      <div class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
-        <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line"></i></span>
-        <img onclick="tdwOpenPhoto()" src="images/TDW/Screenshot 2026-08-27 193143.png"
-          class="w-full cursor-pointer rounded-lg rounded-b-none shadow-[0_4px_10px_rgba(0,0,0,0.15)]" />
-        <div class="flex flex-col gap-3 p-3">
-          <h2 class="text-white font-bold text-sm select-none text-left">Tourist Destinations Website</h2>
-          <p class="text-left tracking-wide text-xs select-none text-gray-400/100">A simple Tourist Website created as
-            part of
-            our
-            Midterm
-            Examination as BSIT 2nd year students. It showcases popular
-            tourist destinations across Asia, Europe, and America, featuring brief descriptions and images. Built
-            with HTML
-            and CSS, the website uses structured sections, navigation links, and smooth scrolling to provide an
-            organized,
-            visually engaging, and user-friendly experience while demonstrating basic web development concepts.
-          </p>
-          <div class="flex justify-start gap-2 text-xs flex-wrap pb-3 select-none">
-            <span class="bg-orange-500 p-1 rounded-md whitespace-nowrap">HTML</span>
-            <span class="bg-blue-500 p-1 rounded-md whitespace-nowrap">CSS</span>
-            <span class="bg-sky-500 p-1 rounded-md whitespace-nowrap">Final Project</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- TDW photo modal -->
     <div id="tdwPhotoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
 
@@ -336,7 +425,7 @@
 
       <div class="w-[90%] max-w-[500px]">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-            [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                    [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -403,103 +492,26 @@
       </div>
     </div>
 
-    <h2 class="text-[#FFF] text-xl font-semibold text-center">Tools</h2>
+    <!-- Cert Modal 1 -->
+    <div id="certModal1" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
+      onclick="closeCert1()">
+      <img src="images/Certifications/Ubaldo_[E-Certificate]_BeyondTheTerminal_page-0001.jpg"
+        class="max-w-full max-h-[90vh] object-contain rounded-md" />
+    </div>
 
-    <section>
-      <div class="flex flex-col gap-2">
-        <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,js" class="w-64" />
-        <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,vite" class="w-64" />
-        <img src="https://skillicons.dev/icons?i=ts,mysql,github,git,npm" class="w-64" />
-      </div>
-    </section>
+    <!-- Cert Modal 2 -->
+    <div id="certModal2" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
+      onclick="closeCert2()">
+      <img src="images/Certifications/Of participation - 2025-12-04T210638.568_page-0001.jpg"
+        class="max-w-full max-h-[90vh] object-contain rounded-md" />
+    </div>
 
-    <h2 class="text-[#FFF] text-xl font-semibold text-center">Experience</h2>
-
-    <section class="px-4 py-8 max-w-md mx-auto">
-      <div class="flex">
-        <div class="flex-1 text-right pr-4 pb-10">
-          <p class="text-white font-semibold text-md">Started Learning</p>
-          <p class="text-gray-400 text-sm">Student</p>
-          <p class="text-gray-500 text-sm">2024 – 2025</p>
-        </div>
-        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
-          <span class="w-1 bg-emerald-500 h-5 rounded-full"></span>
-        </div>
-        <div class="flex-1 pb-10"></div>
-      </div>
-
-      <div class="flex">
-        <div class="flex-1 pb-10"></div>
-        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
-          <span class="w-1 bg-amber-500 h-5 rounded-full"></span>
-        </div>
-        <div class="flex-1 text-left pl-4 pb-10">
-          <p class="text-white font-medium text-md">Fronted Developer</p>
-          <p class="text-gray-400 text-sm">Student</p>
-          <p class="text-gray-500 text-sm">2025 – 2026</p>
-        </div>
-      </div>
-
-      <div class="flex">
-        <div class="flex-1 text-right pr-4 pb-10">
-          <p class="text-white font-medium text-md">Full Stack Developer</p>
-          <p class="text-gray-400 text-sm">Student</p>
-          <p class="text-gray-500 text-sm">2026 – 2027</p>
-        </div>
-        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
-          <span class="w-1 bg-sky-500 h-5 rounded-full"></span>
-        </div>
-
-        <div class="flex-1 pb-10"></div>
-
-      </div>
-    </section>
-
-    <h2 class="text-[#FFF] text-xl font-semibold text-center">Certifications</h2>
-
-    <section class="px-4 py-8 max-w-md mx-auto">
-
-      <div class="flex">
-        <!-- LEFT — isang malaking image -->
-        <div class="flex-1">
-          <img onclick="openCert1()" src="images/Certifications/Ubaldo_[E-Certificate]_BeyondTheTerminal_page-0001.jpg"
-            class="w-full h-full object-cover rounded-tl-lg rounded-bl-lg cursor-pointer hover:opacity-90 transition-opacity" />
-        </div>
-        <!-- RIGHT — dalawang image na naka-stack -->
-        <div class="flex-1 flex flex-col">
-          <img onclick="openCert2()" src="images/Certifications/Of participation - 2025-12-04T210638.568_page-0001.jpg"
-            class="w-full flex-1 object-cover rounded-tr-lg cursor-pointer hover:opacity-90 transition-opacity" />
-          <img onclick="openCert3()" src="images/Certifications/Of participation (35)_page-0001.jpg"
-            class="w-full flex-1 object-cover rounded-br-lg cursor-pointer hover:opacity-90 transition-opacity" />
-        </div>
-
-        <!-- Cert Modal 1 -->
-        <div id="certModal1"
-          class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
-          onclick="closeCert1()">
-          <img src="images/Certifications/Ubaldo_[E-Certificate]_BeyondTheTerminal_page-0001.jpg"
-            class="max-w-full max-h-[90vh] object-contain rounded-md" />
-        </div>
-
-        <!-- Cert Modal 2 -->
-        <div id="certModal2"
-          class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
-          onclick="closeCert2()">
-          <img src="images/Certifications/Of participation - 2025-12-04T210638.568_page-0001.jpg"
-            class="max-w-full max-h-[90vh] object-contain rounded-md" />
-        </div>
-
-        <!-- Cert Modal 3 -->
-        <div id="certModal3"
-          class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
-          onclick="closeCert3()">
-          <img src="images/Certifications/Of participation (35)_page-0001.jpg"
-            class="max-w-full max-h-[90vh] object-contain rounded-md" />
-        </div>
-
-      </div>
-    </section>
-
+    <!-- Cert Modal 3 -->
+    <div id="certModal3" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center px-4"
+      onclick="closeCert3()">
+      <img src="images/Certifications/Of participation (35)_page-0001.jpg"
+        class="max-w-full max-h-[90vh] object-contain rounded-md" />
+    </div>
   </main>
 
   <script src="function.js"></script>
