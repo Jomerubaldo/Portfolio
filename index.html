@@ -33,7 +33,7 @@
     </svg>
   </nav>
 
-  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 max-w-md mx-auto md:max-w-3xl">
+  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 w-full max-w-screen-lg mx-auto">
 
     <section class="flex flex-col items-center gap-3">
       <img class="rounded-full w-44 h-44 object-cover md:w-64 md:h-64" src="images/professional-profile.png"
@@ -61,7 +61,7 @@
 
     <div class="space-y-5 md:grid md:grid-cols-2 auto-rows-fr md:gap-5">
       <!-- Boarding House Management System -->
-      <section class="w-full max-w-[350px] space-y-2">
+      <section class="w-full space-y-2">
         <div
           class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
           <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
@@ -91,7 +91,7 @@
       </section>
 
       <!-- Aluminum and Glass Supply Sales and Order Management System -->
-      <section class="w-full max-w-[350px] space-y-2">
+      <section class="w-full space-y-2">
         <div
           class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
           <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
@@ -124,7 +124,7 @@
       </section>
 
       <!-- React Web Studio -->
-      <section class="w-full max-w-[350px] space-y-2">
+      <section class="w-full space-y-2">
         <div
           class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
           <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
@@ -153,7 +153,7 @@
       </section>
 
       <!-- Tourist Destinations Website -->
-      <section class="w-full max-w-[350px] space-y-2">
+      <section class="w-full space-y-2">
         <div
           class="w-auto h-auto relative bg-[#2C3038] rounded-lg transition-transform duration-200 hover:scale-[1.02]">
           <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line"></i></span>
@@ -186,22 +186,42 @@
 
     <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Tools</h2>
 
-    <section>
-      <div class="flex flex-col gap-2 md:gap-4">
-        <img src="https://skillicons.dev/icons?i=html,css,tailwind,bootstrap,js" class="w-64 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=mongodb,express,react,nodejs,vite" class="w-64 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=ts,mysql,github,git,npm" class="w-64 md:w-94" />
+    <section class="flex flex-col gap-8 w-screen">
+      <div class="flex gap-8 justify-center">
+        <img src="https://skillicons.dev/icons?i=html" class="w-16 md:w-14" />
+        <img src="https://skillicons.dev/icons?i=css" class="w-16 md:w-14" />
+        <img src="https://skillicons.dev/icons?i=tailwindcss" class="w-16 md:w-94" />
+      </div>
+      <div class="flex gap-8 justify-center">
+        <img src="https://skillicons.dev/icons?i=bootstrap" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=js" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=mongodb" class="w-16 md:w-94" />
+      </div>
+      <div class="flex gap-8 justify-center">
+        <img src="https://skillicons.dev/icons?i=express" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=react" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=nodejs" class="w-16 md:w-94" />
+      </div>
+      <div class="flex gap-8 justify-center">
+        <img src="https://skillicons.dev/icons?i=vite" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=ts" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=mysql" class="w-16 md:w-94" />
+      </div>
+      <div class="flex gap-8 justify-center">
+        <img src="https://skillicons.dev/icons?i=github" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=git" class="w-16 md:w-94" />
+        <img src="https://skillicons.dev/icons?i=npm" class="w-16 md:w-94" />
       </div>
     </section>
 
     <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Experience</h2>
 
-    <section class="px-4 py-8 max-w-md md:max-w-lg mx-auto">
+    <section class="px-4 py-8">
       <div class="flex">
         <div class="flex-1 text-right pr-4 pb-10">
           <p class="text-white font-semibold text-md md:text-xl">Started Learning</p>
-          <p class="text-gray-400 text-sm md:text-md">Student</p>
-          <p class="text-gray-500 text-sm md:text-md">2024 – 2025</p>
+          <p class="text-gray-400 text-sm">Student</p>
+          <p class="text-gray-500 text-sm">2024 – 2025</p>
         </div>
         <div class="w-0.5 md:w-1 bg-gray-600 mx-4 flex justify-center items-center">
           <span class="w-1 md:w-2 bg-emerald-500 h-5 rounded-full"></span>
@@ -211,11 +231,11 @@
 
       <div class="flex">
         <div class="flex-1 pb-10"></div>
-        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
+        <div class="w-0.5 md:w-1 bg-gray-600 mx-4 flex justify-center items-center">
           <span class="w-1 bg-amber-500 h-5 rounded-full"></span>
         </div>
         <div class="flex-1 text-left pl-4 pb-10">
-          <p class="text-white font-medium text-md">Fronted Developer</p>
+          <p class="text-white font-medium text-md md:text-xl">Fronted Developer</p>
           <p class="text-gray-400 text-sm">Student</p>
           <p class="text-gray-500 text-sm">2025 – 2026</p>
         </div>
@@ -223,11 +243,11 @@
 
       <div class="flex">
         <div class="flex-1 text-right pr-4 pb-10">
-          <p class="text-white font-medium text-md">Full Stack Developer</p>
+          <p class="text-white font-medium text-md md:text-xl">Full Stack Developer</p>
           <p class="text-gray-400 text-sm">Student</p>
           <p class="text-gray-500 text-sm">2026 – 2027</p>
         </div>
-        <div class="w-0.5 bg-gray-600 mx-4 flex justify-center items-center">
+        <div class="w-0.5 md:w-1 bg-gray-600 mx-4 flex justify-center items-center">
           <span class="w-1 bg-sky-500 h-5 rounded-full"></span>
         </div>
 
@@ -236,9 +256,9 @@
       </div>
     </section>
 
-    <h2 class="text-[#FFF] text-xl font-semibold text-center">Certifications</h2>
+    <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Certifications</h2>
 
-    <section class="px-4 py-8 max-w-md mx-auto">
+    <section class="px-4 py-8 w-screen">
 
       <div class="flex">
         <!-- LEFT — isang malaking image -->
