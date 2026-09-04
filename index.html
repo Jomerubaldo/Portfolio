@@ -6,18 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <title>JomerDev</title>
+  <link rel="icon" href="https://skillicons.dev/icons?i=htmx" />
+  <title>Jomer Ubaldo</title>
 </head>
 
 <body class="font-mono scroll-smooth bg-[#010409]">
 
   <nav class="flex justify-between items-center px-6 py-6 w-full fixed z-50 bg-[#010409]">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+    <svg class="md:hidden block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+      fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+      class="lucide lucide-menu-icon lucide-menu">
       <path d="M4 5h16" />
       <path d="M4 12h16" />
       <path d="M4 19h16" />
     </svg>
+    <h2 class="text-white text-xl hidden md:block">JomDev</h2>
     <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
       stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
       class="lucide lucide-sun-icon lucide-sun">
@@ -35,31 +38,38 @@
 
   <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 w-full max-w-screen-lg mx-auto">
 
-    <section class="flex flex-col items-center gap-3">
-      <img class="rounded-full w-44 h-44 object-cover md:w-64 md:h-64" src="images/professional-profile.png"
-        alt="Profile" />
-      <h1 class="text-[#FFF] text-2xl md:text-3xl text-center">Jomer Ubaldo</h1>
-      <ul class="flex gap-5 text-[#FFF] text-xl md:text-2xl">
-        <li><a href="mailto:jomerubaldo@gmail.com"><i class="ri-mail-line"></i></a></li>
-        <li><a href="https://github.com/Jomerubaldo" target="_blank"><i class="ri-github-fill"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/jomer-ubaldo-746626340/" target="_blank"><i
-              class="ri-linkedin-box-fill"></i></a></li>
-      </ul>
-    </section>
+    <div class="md:flex md:items-center md:justify-center gap-28 md:w-full">
+      <section class="flex flex-col items-center gap-3">
+        <img class="rounded-full object-cover w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64"
+          src="images/professional-profile.png" alt="Profile" />
+        <h1 class="text-[#FFF] text-2xl md:text-3xl text-center">Jomer Ubaldo</h1>
+        <ul class="flex gap-5 text-[#FFF] text-xl md:text-xl">
+          <li class="border py-1 px-2 rounded-full"><a href="mailto:jomerubaldo@gmail.com"><i
+                class="ri-mail-line"></i></a></li>
+          <li class="border py-1 px-2 rounded-full"><a href="https://github.com/Jomerubaldo" target="_blank"><i
+                class="ri-github-fill"></i></a></li>
+          <li class="border py-1 px-2 rounded-full"><a href="https://www.linkedin.com/in/jomer-ubaldo-746626340/"
+              target="_blank"><i class="ri-linkedin-box-fill"></i></a></li>
+        </ul>
+      </section>
 
-    <h2 class="text-[#FFF] text-xl text-center font-semibold md:text-2xl">About Me</h2>
+      <h2 class="md:hidden text-[#FFF] text-xl text-center font-semibold md:text-2xl pt-10">About Me</h2>
 
-    <section class="flex flex-col gap-3 w-full">
-      <p class="text-gray-400/100 tracking-wide md:text-base text-sm leading-relaxed text-center">
-        Hi! I'm Jomer Ubaldo, Aspiring Software Engineer and undergraduate
-        student passionate about building real-world application. Creating hands-on projects using
-        modern technologies with MySQL, ExpressJS, ReactJS and NodeJS.
-      </p>
-    </section>
+      <section class="flex flex-col gap-3 w-full md:w-72 lg:w-96">
+        <p
+          class="text-gray-400/100 pt-5 tracking-wide md:text-base md:text-left lg:text-lg text-sm leading-relaxed text-center">
+          Hi! I'm Jomer Ubaldo, Aspiring Software Engineer and undergraduate
+          student passionate about building real-world application. Creating hands-on projects using
+          modern technologies with MySQL, ExpressJS, ReactJS and NodeJS.
+        </p>
+      </section>
+    </div>
+
 
     <h2 class="text-[#FFF] text-xl font-semibold text-center md:text-2xl">Projects</h2>
 
     <div class="space-y-5 md:grid md:grid-cols-2 auto-rows-fr md:gap-5">
+
       <!-- Boarding House Management System -->
       <section class="w-full space-y-2">
         <div
@@ -172,7 +182,7 @@
               with HTML
               and CSS, the website uses structured sections, navigation links, and smooth scrolling to provide an
               organized,
-              visually engaging, and user-friendly experience while demonstrating basic web development concepts.
+              visually engaging, and user-friendly experience while demonstrating basic web development.
             </p>
             <div class="flex justify-start gap-2 text-xs md:text-sm flex-wrap pb-3 select-none">
               <span class="bg-orange-500 p-1 rounded-md whitespace-nowrap">HTML</span>
@@ -186,31 +196,51 @@
 
     <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Tools</h2>
 
-    <section class="flex flex-col gap-8 w-screen">
-      <div class="flex gap-8 justify-center">
-        <img src="https://skillicons.dev/icons?i=html" class="w-16 md:w-14" />
-        <img src="https://skillicons.dev/icons?i=css" class="w-16 md:w-14" />
-        <img src="https://skillicons.dev/icons?i=tailwindcss" class="w-16 md:w-94" />
+    <section class="grid grid-cols-3 gap-4 md:grid-cols-4 md:gap-6 lg:grid-cols-5 lg:gap-8 ">
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=html" class="w-14 md:w-16" />
       </div>
-      <div class="flex gap-8 justify-center">
-        <img src="https://skillicons.dev/icons?i=bootstrap" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=js" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=mongodb" class="w-16 md:w-94" />
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=css" class="w-14 md:w-16" />
       </div>
-      <div class="flex gap-8 justify-center">
-        <img src="https://skillicons.dev/icons?i=express" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=react" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=nodejs" class="w-16 md:w-94" />
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=tailwindcss" class="w-14 md:w-16" />
       </div>
-      <div class="flex gap-8 justify-center">
-        <img src="https://skillicons.dev/icons?i=vite" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=ts" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=mysql" class="w-16 md:w-94" />
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=bootstrap" class="w-14 md:w-16" />
       </div>
-      <div class="flex gap-8 justify-center">
-        <img src="https://skillicons.dev/icons?i=github" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=git" class="w-16 md:w-94" />
-        <img src="https://skillicons.dev/icons?i=npm" class="w-16 md:w-94" />
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=js" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=mongodb" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=express" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=react" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=nodejs" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=vite" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=ts" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=mysql" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=github" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=git" class="w-14 md:w-16" />
+      </div>
+      <div class="border border-[#2C3038] py-2 px-3 rounded-lg">
+        <img src="https://skillicons.dev/icons?i=npm" class="w-14 md:w-16" />
       </div>
     </section>
 
@@ -235,7 +265,7 @@
           <span class="w-1 bg-amber-500 h-5 rounded-full"></span>
         </div>
         <div class="flex-1 text-left pl-4 pb-10">
-          <p class="text-white font-medium text-md md:text-xl">Fronted Developer</p>
+          <p class="text-white font-semibold text-md md:text-xl">Fronted Developer</p>
           <p class="text-gray-400 text-sm">Student</p>
           <p class="text-gray-500 text-sm">2025 – 2026</p>
         </div>
@@ -243,7 +273,7 @@
 
       <div class="flex">
         <div class="flex-1 text-right pr-4 pb-10">
-          <p class="text-white font-medium text-md md:text-xl">Full Stack Developer</p>
+          <p class="text-white font-semibold text-md md:text-xl">Full Stack Developer</p>
           <p class="text-gray-400 text-sm">Student</p>
           <p class="text-gray-500 text-sm">2026 – 2027</p>
         </div>
@@ -258,7 +288,7 @@
 
     <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center">Certifications</h2>
 
-    <section class="px-4 py-8 w-screen">
+    <section class="px-4 py-8 lg:max-w-[1000px] w-screen">
 
       <div class="flex">
         <!-- LEFT — isang malaking image -->
