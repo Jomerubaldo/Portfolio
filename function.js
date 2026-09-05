@@ -1,3 +1,4 @@
+// bhms modal
 function bhmsOpenPhoto() {
   const bhmsModal = document.getElementById('bhmsPhotoModal');
   bhmsModal.classList.remove('hidden');
@@ -10,6 +11,7 @@ function bhmsClosePhoto() {
   bhmsModal.classList.remove('flex');
 }
 
+// agssoms modal
 function agssomsOpenPhoto() {
   const agssomsModal = document.getElementById('agssomsPhotoModal');
   agssomsModal.classList.remove('hidden');
@@ -22,6 +24,7 @@ function agssomsClosePhoto() {
   agssomsModal.classList.remove('flex');
 }
 
+// rws modal
 function rwsOpenPhoto() {
   const agssomsModal = document.getElementById('rwsPhotoModal');
   agssomsModal.classList.remove('hidden');
@@ -34,6 +37,7 @@ function rwsClosePhoto() {
   agssomsModal.classList.remove('flex');
 }
 
+//tdw modal
 function tdwOpenPhoto() {
   const agssomsModal = document.getElementById('tdwPhotoModal');
   agssomsModal.classList.remove('hidden');
@@ -46,7 +50,7 @@ function tdwClosePhoto() {
   agssomsModal.classList.remove('flex');
 }
 
-// cetification part
+// cetification modal 1
 function openCert1() {
   const modal1 = document.getElementById('certModal1');
   modal1.classList.remove('hidden');
@@ -59,6 +63,7 @@ function closeCert1() {
   modal1.classList.remove('flex');
 }
 
+// certification modal 2
 function openCert2() {
   const modal2 = document.getElementById('certModal2');
   modal2.classList.remove('hidden');
@@ -71,6 +76,7 @@ function closeCert2() {
   modal2.classList.remove('flex');
 }
 
+// certification modal 3
 function openCert3() {
   const modal3 = document.getElementById('certModal3');
   modal3.classList.remove('hidden');
@@ -83,6 +89,7 @@ function closeCert3() {
   modal3.classList.remove('flex');
 }
 
+// 
 const slider = document.querySelector('#scroll-container');
 
 let isDown = false;

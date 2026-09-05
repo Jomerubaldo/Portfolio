@@ -43,7 +43,7 @@
         <img
           class="rounded-full object-cover px-0.5 py-0.5 w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 border border-[#3b82f6]"
           src="images/professional-profile.png" alt="Profile" />
-        <h1 class="text-[#FFF] text-2xl md:text-3xl text-center">Jomer Ubaldo</h1>
+        <h1 class="text-[#FFF] text-2xl md:text-3xl text-center select-none">Jomer Ubaldo</h1>
         <ul class="flex gap-5 text-[#3b82f6] text-xl md:text-xl">
           <li class="border py-1 px-2 rounded-full"><a href="mailto:jomerubaldo@gmail.com"><i
                 class="ri-mail-line"></i></a></li>
@@ -59,7 +59,7 @@
       <section class="flex flex-col gap-3 w-full md:w-72 lg:w-96">
         <p
           class="text-gray-400 pt-5 tracking-wide md:text-base md:text-left lg:text-lg text-sm leading-relaxed text-center select-none">
-          Hi! I'm Jomer Ubaldo, Aspiring Software Engineer and undergraduate
+          Hi! I'm Jomer, Aspiring Software Engineer and undergraduate
           student passionate about building real-world application. Creating hands-on projects using
           modern technologies with MySQL, ExpressJS, ReactJS and NodeJS.
         </p>
@@ -69,7 +69,7 @@
 
     <h2 class="text-[#FFF] text-xl font-semibold text-center md:text-2xl select-none">Projects</h2>
 
-    <div class="space-y-5 md:grid md:grid-cols-2 auto-rows-fr md:gap-5">
+    <div class="space-y-5 gap-5 md:space-y-1 md:gap-4 md:grid md:grid-cols-2">
 
       <!-- Boarding House Management System -->
       <section class="w-full space-y-2">
@@ -273,23 +273,24 @@
 
     <section class="px-4 py-8">
       <div class="flex">
-        <div class="flex-1 text-right pr-4 pb-10">
+        <div class="flex-1 text-right pt-20">
           <p class="text-white font-semibold text-md md:text-xl select-none">Started Learning</p>
           <p class="text-gray-400 text-sm select-none">Student</p>
           <p class="text-gray-500 text-sm select-none">2024 – 2025</p>
         </div>
-        <div class="w-0.5 md:w-1 bg-[#3b82f6]/30 mx-4 flex justify-center items-center">
-          <span class="w-1 md:w-2 bg-emerald-500 h-5 rounded-full"></span>
+        <div
+          class="w-1 bg-gray-600 mx-4 border-[0.1px] border-[#3b82f6]/30 flex justify-center items-center rounded-t-full">
+          <span class="w-1 md:w-2 bg-emerald-500 h-6 rounded-full"></span>
         </div>
         <div class="flex-1 pb-10"></div>
       </div>
 
       <div class="flex">
-        <div class="flex-1 pb-10"></div>
-        <div class="w-0.5 md:w-1 bg-[#3b82f6]/30 mx-4 flex justify-center items-center">
-          <span class="w-1 bg-amber-500 h-5 rounded-full"></span>
+        <div class="flex-1 pb-20"></div>
+        <div class="w-1 bg-gray-600 mx-4 border-[0.1px] border-[#3b82f6]/30 flex justify-center items-center">
+          <span class="w-1 bg-amber-500 h-6 rounded-full"></span>
         </div>
-        <div class="flex-1 text-left pl-4 pb-10">
+        <div class="flex-1 text-left pt-20">
           <p class="text-white font-semibold text-md md:text-xl select-none">Fronted Developer</p>
           <p class="text-gray-400 text-sm select-none">Student</p>
           <p class="text-gray-500 text-sm select-none">2025 – 2026</p>
@@ -297,13 +298,14 @@
       </div>
 
       <div class="flex">
-        <div class="flex-1 text-right pr-4 pb-10">
+        <div class="flex-1 text-right pt-20">
           <p class="text-white font-semibold text-md md:text-xl select-none">Full Stack Developer</p>
           <p class="text-gray-400 text-sm select-none">Student</p>
           <p class="text-gray-500 text-sm select-none">2026 – 2027</p>
         </div>
-        <div class="w-0.5 md:w-1 bg-[#3b82f6]/30 mx-4 flex justify-center items-center">
-          <span class="w-1 bg-sky-500 h-5 rounded-full"></span>
+        <div
+          class="w-1 bg-gray-600 mx-4 border-[0.1px] border-[#3b82f6]/30 flex justify-center items-center rounded-b-full">
+          <span class="w-1 bg-sky-500 h-6 rounded-full"></span>
         </div>
 
         <div class="flex-1 pb-10"></div>
@@ -337,7 +339,7 @@
     <!-- BHMS photo modal -->
     <div id="bhmsPhotoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
 
-      <span onclick="bhmsClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+      <span onclick="bhmsClosePhoto()" class="absolute top-6 right-6 text-white cursor-pointer select-none z-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 6 6 18" />
@@ -384,7 +386,7 @@
     <div id="agssomsPhotoModal"
       class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
 
-      <span onclick="agssomsClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+      <span onclick="agssomsClosePhoto()" class="absolute top-6 right-6 text-white cursor-pointer select-none z-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 6 6 18" />
@@ -458,7 +460,7 @@
     <!-- RWS photo modal -->
     <div id="rwsPhotoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
 
-      <span onclick="rwsClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+      <span onclick="rwsClosePhoto()" class="absolute top-6 right-6 text-white cursor-pointer select-none z-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 6 6 18" />
@@ -490,7 +492,7 @@
     <!-- TDW photo modal -->
     <div id="tdwPhotoModal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm justify-center items-center">
 
-      <span onclick="tdwClosePhoto()" class="absolute top-5 right-5 text-white cursor-pointer select-none z-10">
+      <span onclick="tdwClosePhoto()" class="absolute top-6 right-6 text-white cursor-pointer select-none z-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 6 6 18" />
