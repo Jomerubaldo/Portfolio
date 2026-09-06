@@ -5,14 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="./output.css" rel="stylesheet">
+  <!-- <style type="text/tailwindcss">
+    @custom-variant dark (&:where(.dark, .dark *));
+  </style> -->
   <link rel="icon" href="https://skillicons.dev/icons?i=htmx" />
   <title>Jomer Ubaldo</title>
 </head>
 
-<body class="font-mono scroll-smooth bg-[#010409]">
+<body class="font-mono scroll-smooth bg-white dark:bg-[#010409]">
 
-  <nav class="flex justify-between items-center px-6 py-6 w-full fixed z-50 bg-[#010409]">
+  <nav class="flex justify-between items-center px-6 py-6 w-full fixed z-50 bg-[#010409] ">
     <svg class="md:hidden block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
       fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
       class="lucide lucide-menu-icon lucide-menu">
@@ -21,29 +24,21 @@
       <path d="M4 19h16" />
     </svg>
     <h2 class="text-white text-xl hidden md:block">JomDev</h2>
-    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-      stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      class="lucide lucide-sun-icon lucide-sun">
-      <circle cx="12" cy="12" r="4" />
-      <path d="M12 2v2" />
-      <path d="M12 20v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="m17.66 17.66 1.41 1.41" />
-      <path d="M2 12h2" />
-      <path d="M20 12h2" />
-      <path d="m6.34 17.66-1.41 1.41" />
-      <path d="m19.07 4.93-1.41 1.41" />
-    </svg>
+    <button id="theme-toggle" class="cursor-pointer text-white">
+      <span id="theme-icon" class="text-white inline-block transition-all duration-300 ease-in-out">
+
+      </span>
+    </button>
   </nav>
 
-  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 w-full max-w-screen-lg mx-auto">
+  <main class="min-h-screen flex flex-col items-center px-6 py-30 gap-10 w-full max-w-5xl mx-auto">
 
-    <div class="md:flex md:items-center md:justify-center gap-28 md:w-full">
+    <div class="md:flex md:items-center md:justify-center gap-28 md:w-ful">
       <section class="flex flex-col items-center gap-3">
         <img
           class="rounded-full object-cover px-0.5 py-0.5 w-44 h-44 md:w-56 md:h-56 lg:w-64 lg:h-64 border border-[#3b82f6]/60"
           src="images/professional-profile.png" alt="Profile" />
-        <h1 class="text-[#FFF] text-2xl md:text-3xl text-center select-none">Jomer Ubaldo</h1>
+        <h1 class="text-white text-2xl md:text-3xl text-center select-none">Jomer Ubaldo</h1>
         <ul class="flex gap-5 text-[#3b82f6]/60 text-xl md:text-xl">
           <li class="border py-1 px-2 rounded-full"><a href="mailto:jomerubaldo@gmail.com"><i
                 class="ri-mail-line text-white"></i></a></li>
@@ -54,7 +49,7 @@
         </ul>
       </section>
 
-      <h2 class="md:hidden text-[#FFF] text-xl text-center font-semibold md:text-2xl pt-10 select-none">About Me</h2>
+      <h2 class="md:hidden text-white text-xl text-center font-semibold md:text-2xl pt-10 select-none">About Me</h2>
 
       <section class="flex flex-col gap-3 w-full md:w-72 lg:w-96">
         <p
@@ -67,12 +62,12 @@
     </div>
 
 
-    <h2 class="text-[#FFF] text-xl font-semibold text-center md:text-2xl select-none">Projects</h2>
+    <h2 class="text-white text-xl font-semibold text-center md:text-2xl select-none">Projects</h2>
 
     <div class="space-y-5 gap-5 md:space-y-1 md:gap-4 md:grid md:grid-cols-2">
 
       <!-- Boarding House Management System -->
-      <section class="w-full space-y-2">
+      <sec tion class="w-full space-y-2">
         <div
           class="w-auto h-auto relative border border-[#3b82f6]/20 hover:border-[#3b82f6]/40 bg-[#1A1A1A] rounded-lg transition">
           <span class="absolute right-1 top-1 z-10"><i class="ri-arrow-right-up-line md:text-lg"></i></span>
@@ -106,7 +101,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </sec>
 
       <!-- Aluminum and Glass Supply Sales and Order Management System -->
       <section class="w-full space-y-2">
@@ -219,7 +214,7 @@
       </section>
     </div>
 
-    <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center select-none">Tools</h2>
+    <h2 class="text-white text-xl md:text-2xl font-semibold text-center select-none">Tools</h2>
 
     <section class="grid grid-cols-3 gap-4 md:grid-cols-4 md:gap-6 lg:grid-cols-5 lg:gap-8 ">
       <div class="border border-[#3b82f6]/30 hover:border-[#3b82f6]/40 py-2 px-3 rounded-lg">
@@ -269,7 +264,7 @@
       </div>
     </section>
 
-    <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center select-none">Experience</h2>
+    <h2 class="text-white text-xl md:text-2xl font-semibold text-center select-none">Experience</h2>
 
     <section class="px-4 py-8">
       <div class="flex">
@@ -313,9 +308,9 @@
       </div>
     </section>
 
-    <h2 class="text-[#FFF] text-xl md:text-2xl font-semibold text-center select-none">Certificates</h2>
+    <h2 class="text-white text-xl md:text-2xl font-semibold text-center select-none">Certificates</h2>
 
-    <section class="px-4 py-8 lg:max-w-[1000px] w-screen">
+    <section class="px-4 py-8 lg:max-w-250 w-screen">
 
       <div class="flex">
         <!-- LEFT — isang malaking image -->
@@ -347,9 +342,9 @@
         </svg>
       </span>
 
-      <div class="w-[90%] max-w-[500px]">
+      <div class="w-[90%] max-w-125">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-              [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+              [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -394,9 +389,9 @@
         </svg>
       </span>
 
-      <div class="w-[90%] max-w-[500px]">
+      <div class="w-[90%] max-w-125">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                      [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -468,9 +463,9 @@
         </svg>
       </span>
 
-      <div class="w-[90%] max-w-[500px]">
+      <div class="w-[90%] max-w-125">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-                            [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                            [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
@@ -500,9 +495,9 @@
         </svg>
       </span>
 
-      <div class="w-[90%] max-w-[500px]">
+      <div class="w-[90%] max-w-125">
         <div id="scroll-container" class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory 
-                    [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                    [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] scrollbar-none">
 
           <!-- photo 1 -->
           <div class="w-full snap-start flex-none">
