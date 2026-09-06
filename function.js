@@ -129,6 +129,7 @@ function closeCert3() {
   modal3.classList.remove('flex');
 }
 
+// swiping modal pictures
 const slider = document.querySelector('#scroll-container');
 
 let isDown = false;
