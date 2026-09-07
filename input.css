@@ -1,3 +1,3 @@
-/* app.css */
+/* sa input.css o main CSS mo */
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
