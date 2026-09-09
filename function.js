@@ -1,5 +1,4 @@
 //humburger menu drop down
-
 const btn = document.getElementById('btnMenu');
 const menuModal = document.getElementById('hamburgerMenu');
 const btnClose = document.getElementById('wes');
@@ -7,18 +6,23 @@ const btnClose = document.getElementById('wes');
 function openModal() {
   menuModal.classList.remove('hidden');
 }
-
 btn.addEventListener('click', openModal);
 
 function closeModal() {
   menuModal.classList.add('hidden');
 }
-
 btnClose.addEventListener('click', closeModal);
 
-// theme toggle darkmode
+//close hamburger every sidebar link click
+const sidebarLinks = document.querySelectorAll('.sidebar-links');
 
-// dom
+sidebarLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    menuModal.classList.add('hidden');
+  });
+});
+
+// theme toggle darkmode
 const buttonToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
 
