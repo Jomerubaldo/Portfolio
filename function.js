@@ -1,3 +1,21 @@
+//humburger menu drop down
+
+const btn = document.getElementById('btnMenu');
+const menuModal = document.getElementById('hamburgerMenu');
+const btnClose = document.getElementById('wes');
+
+function openModal() {
+  menuModal.classList.remove('hidden');
+}
+
+btn.addEventListener('click', openModal);
+
+function closeModal() {
+  menuModal.classList.add('hidden');
+}
+
+btnClose.addEventListener('click', closeModal);
+
 // theme toggle darkmode
 
 // dom
